@@ -1,4 +1,4 @@
 FROM openjdk:17
-COPY target/HelloApi.war  /usr/app/
+COPY target/HelloApi.jar  /usr/app/
 WORKDIR /usr/app/
-ENTRYPOINT ["java","-jar","HelloApi.war"]
+ENTRYPOINT ["java","-jar","HelloApi.jar"]
